@@ -104,7 +104,8 @@ class WordPress_Gist {
         add_shortcode( 'gist', array( $this, 'wordpress_gist_shortcode' ) );
 
         // Register styles.
-        add_action( 'wp_enqueue_scripts', array( $this, 'wordpress_gist_styles' ), 1000 );
+        // Adding styling in my child theme's style.less file
+        // add_action( 'wp_enqueue_scripts', array( $this, 'wordpress_gist_styles' ), 1000 );
 
     } // end constructor
 
